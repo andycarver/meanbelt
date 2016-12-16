@@ -1,0 +1,10 @@
+<div ng-controller="question_c">
+    <a href="#!/dash">Home</a>
+    <a href="/logout">Log Out</a>
+    <h3>New Question</h3>
+    <input ng-model="new_question.question" type="text" placeholder="Question">
+    <input ng-model="new_question.desc" type="text" placeholder="Description(optional)">
+    <a href="#!/dash"><button>Cancel</button></a>
+    <button ng-click="add_question()">Submit</button>
+    {{error}}
+</div>
